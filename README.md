@@ -6,11 +6,9 @@ Para comprobar que sí temos a iamxe "httpd" escribiremos o comando `docker imag
 
 **2.Crea un contenedor de nome 'asir_httpd'.**
 
-    Para crear un contenedor cun nome establecido polo usuario utilizaremos o comando
-`docker run -d --name (nome do contenedor) (imaxe)`, neste caso crearemolo con este codigo xa que queremos que se execute ao crealo (funcion "run" no comando) e queremos envialo a segundo plano e que non se deteña ao pechar a terminal (funcion "-d" no comando).
+Para crear un contenedor cun nome establecido polo usuario utilizaremos o comando `docker run -d --name (nome do contenedor) (imaxe)`, neste caso crearemolo con este codigo xa que queremos que se execute ao crealo (funcion "run" no comando) e queremos envialo a segundo plano e que non se deteña ao pechar a terminal (funcion "-d" no comando).
 
-    Por outra parte se soamente queremos crealo sen executalo podemos escribir o seguinte
-comando `docker create --name (nome do contenedor) (imaxe)`.
+Por outra parte se soamente queremos crealo sen executalo podemos escribir o seguinte comando `docker create --name (nome do contenedor) (imaxe)`.
 
 **3.Mapea o porto 80 do contenedor có 8080 da túa máquina.**
 
@@ -18,8 +16,7 @@ comando `docker create --name (nome do contenedor) (imaxe)`.
 
 ***Utiliza -v "$PWD"/htdocs:/usr/local/apache2/htdocs/***
 
-    Nesta tarefa xuntaremos os puntos 2 e o punto 3. Para mapear o porto
-añadiremos ao comando do punto 2 `-p 8080:80` é ademais `-v "$PWD"/(Directorio a nontar):/usr/local/apache2/htdocs/ (imaxe)` para montar o directorio htdocs do servidor apache no contenedor a partir do directorio actual ($PWD). Con todo isto o comando final quedatía da seguinte forma; `docker run -d --name asir_httpd -p 8080:80 -v /home/iago/Practica2:/usr/local/apache2/htdocs/ httpd`
+Nesta tarefa xuntaremos os puntos 2 e o punto 3. Para mapear o porto añadiremos ao comando do punto 2 `-p 8080:80` é ademais `-v "$PWD"/(Directorio a nontar):/usr/local/apache2/htdocs/ (imaxe)` para montar o directorio htdocs do servidor apache no contenedor a partir do directorio actual ($PWD). Con todo isto o comando final quedatía da seguinte forma; `docker run -d --name asir_httpd -p 8080:80 -v /home/iago/Practica2:/usr/local/apache2/htdocs/ httpd`
 
 **4.Mostra unha páxina html aloxada no apache2 dende o teu navegador.**
 
