@@ -20,6 +20,9 @@ Nesta tarefa xuntaremos os puntos 2 e o punto 3. Para mapear o porto añadiremos
 
 **4.Mostra unha páxina html aloxada no apache2 dende o teu navegador.**
 
+Para mostrar una paxina html aloxada no apache2 crearemos un arquivo html no directorio asociado no punto anterior, no meu caso dentro do directorio Practica2.
+Unha vez feito iso buscamos no noso navegador "localhost:8080/" e se o fixemos ben aparecerá o index coa nosa páxina html.
+ 
 **5.Crea un contenedor 'asir_web1' que use este mesmo directorio para 'htdocs' e o puerto 8000**
 
 **6.Crea outro contenedor 'asir_web2' có el mesmo directorio e otro puerto, como o 8090.**
