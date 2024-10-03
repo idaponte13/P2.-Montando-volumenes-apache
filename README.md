@@ -16,7 +16,7 @@ Por outra parte se soamente queremos crealo sen executalo podemos escribir o seg
 
 ***Utiliza -v "$PWD"/htdocs:/usr/local/apache2/htdocs/***
 
-Nesta tarefa xuntaremos os puntos 2 e o punto 3. Para mapear o porto añadiremos ao comando do punto 2 `-p 8080:80` é ademais `-v "$PWD"/(Directorio a nontar):/usr/local/apache2/htdocs/ (imaxe)` para montar o directorio htdocs do servidor apache no contenedor a partir do directorio actual ($PWD). Con todo isto o comando final quedatía da seguinte forma; `docker run -d --name asir_httpd -p 8080:80 -v /home/iago/Practica2:/usr/local/apache2/htdocs/ httpd`
+Nesta tarefa xuntaremos os puntos 2 e o punto 3. Para mapear o porto añadiremos ao comando do punto 2 `-p 8080:80` para mapear o porto 80 e ademais `-v "$PWD"/(Directorio a nontar):/usr/local/apache2/htdocs/ (imaxe)` para montar o directorio htdocs do servidor apache no contenedor a partir do directorio actual ($PWD). Con todo isto o comando final quedaría da seguinte forma: `docker run -d --name asir_httpd -p 8080:80 -v /home/iago/Practica2:/usr/local/apache2/htdocs/ httpd`
 
 **4.Mostra unha páxina html aloxada no apache2 dende o teu navegador.**
 
