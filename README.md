@@ -20,7 +20,7 @@ Nesta tarefa xuntaremos os puntos 2 e o punto 3. Para mapear o porto añadiremos
 
 **4.Mostra unha páxina html aloxada no apache2 dende o teu navegador.**
 
-Para mostrar una paxina html aloxada no apache2 crearemos un arquivo html no directorio asociado no punto anterior, no meu caso dentro do directorio Practica2.
+Para mostrar una paxina html aloxada no apache2 crearemos un arquivo html no directorio asociado no punto anterior, no meu caso dentro do directorio htdocs.
 Unha vez feito iso buscamos no noso navegador `localhost:8080/` e se o fixemos ben aparecerá o index coa nosa páxina html.
 
 **5.Crea un contenedor 'asir_web1' que use este mesmo directorio para 'htdocs' e o puerto 8000**
@@ -38,3 +38,6 @@ Ao igual que no punto anterior crearemos un contenedor co nome asir_web2 pero ne
 O comando a executar é o seguinte `docker run -d --name asir_web2 -p 8090:80 -v /home/iago/htdocs:/usr/local/apache2/htdocs/ httpd`.
 
 Por último para comprobar que os dous servidores mostran a mesma paxina web buscaremos no noso navegador web `http://localhost:8000/` para "asir_web1" e `http://localhost:8090/` para "asir_web2"
+
+
+A continuación deixarei un enlace de apoio onde se pode ver de forma grafica os pasos anteriores [Descripción Gráfica](https://docs.google.com/document/d/1n1eWJ78NX0vyJ95x-zQEwg3JVdBDc_Ndeg7THFZmB7Q/edit). 
