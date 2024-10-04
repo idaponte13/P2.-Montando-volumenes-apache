@@ -40,4 +40,4 @@ O comando a executar é o seguinte `docker run -d --name asir_web2 -p 8090:80 -v
 Por último para comprobar que os dous servidores mostran a mesma paxina web buscaremos no noso navegador web `http://localhost:8000/` para "asir_web1" e `http://localhost:8090/` para "asir_web2"
 
 
-A continuación deixarei un enlace de apoio onde se pode ver de forma grafica os pasos anteriores [Descripción Gráfica](https://docs.google.com/document/d/1n1eWJ78NX0vyJ95x-zQEwg3JVdBDc_Ndeg7THFZmB7Q/edit). 
+A continuación deixarei un enlace de apoio onde se pode ver de forma grafica os pasos anteriores [Descripción Gráfica](https://docs.google.com/document/d/1tZxFDSmlC_yXApqlJfKa3F3QASanfRTCAiHGjhS1Xu0/edit?pli=1). 
